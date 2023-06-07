@@ -6,5 +6,6 @@ namespace Task_PurpleBuzz.ViewModels.Contacts
     {
         public ContactsBannerComponent ContactsBannerComponent { get; set; }
         public ContactsSuccessComponent ContactsSuccessComponent { get; set; }
+        public List<ContactsSupportComponent> ContactsSupportComponent { get; set; }
     }
 }

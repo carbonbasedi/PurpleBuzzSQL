@@ -16,11 +16,13 @@ namespace Task_PurpleBuzz.Controllers
         {
             var contactBannerComponent = _context.ContactsBannerComponents.FirstOrDefault();
             var contactSuccessComponent = _context.ContactsSuccessComponents.FirstOrDefault();
+            var contactSupportComponent = _context.ContactsSupportComponents.ToList();
 
             var model = new ContactsIndexVM
             {
                 ContactsBannerComponent = contactBannerComponent,
-                ContactsSuccessComponent = contactSuccessComponent
+                ContactsSuccessComponent = contactSuccessComponent,
+                ContactsSupportComponent = contactSupportComponent
             };
 
             return View(model);

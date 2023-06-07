@@ -13,5 +13,6 @@ namespace Task_PurpleBuzz.DAL
         public DbSet<AboutBannerComponent> AboutBannerComponent{ get; set; }
         public DbSet<ContactsBannerComponent> ContactsBannerComponents { get; set; }
         public DbSet<ContactsSuccessComponent> ContactsSuccessComponents { get; set; }
+        public DbSet<ContactsSupportComponent> ContactsSupportComponents { get; set; }
     }
 }
